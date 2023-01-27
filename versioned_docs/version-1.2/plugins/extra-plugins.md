@@ -697,7 +697,7 @@ lvim.plugins = {
     config = function()
       vim.defer_fn(function()
         require("copilot").setup {
-	        plugin_manager_path = get_runtime_dir() .. "/site/pack/packer",
+	  plugin_manager_path = get_runtime_dir() .. "/site/pack/lazy",
         }
       end, 100)
     end,
